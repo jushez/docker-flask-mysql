@@ -9,6 +9,6 @@ def init():
 		db.session.add(counter)
 		db.session.commit()
 	else:
-		counter.count += 1
+		counter.counter += 1
 		db.session.commit()
 	return "<h1>Coutner: " + str(counter.count) + "</h1>"

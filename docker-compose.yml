@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - /Users/Imran/Documents/dev/opt/docker-compose-mysql:/counter_app
+      - .:/counter
     links:
       - db:mysql
     container_name: counterapp_web_1
